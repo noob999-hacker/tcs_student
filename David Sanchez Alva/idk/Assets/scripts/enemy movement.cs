@@ -18,6 +18,10 @@ public class enemymovement : MonoBehaviour
         );
         if(Vector3.Distance(transform.position,target_node.position) < 0.1){
             current_node += 1;
+            if(current_node>=nodes.Length){
+                GameObject.Find("bass").GetComponent<baseHP>().TakeDamage(10);
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -25,12 +29,14 @@ public class enemymovement : MonoBehaviour
         health -=5;
         if(health<=0){
             market.GetComponent<blackj_market>().unpaid_taxes += 50;
+            
             Destroy(gameObject);
         }
     }
     void Start()
     {
         transform.position = new Vector3(8.14f,1.28f,0.00f);
+        market=GameObject.FindAnyObjectByType<blackj_market>().gameObject;
     }
 
 

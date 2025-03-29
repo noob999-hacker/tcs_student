@@ -17,9 +17,19 @@ public class Generic_Tower : MonoBehaviour
         
     }
 
-    void Findclosest(){
+   public GameObject Findclosest(){
         GameObject[] enemy=GameObject.FindGameObjectsWithTag(target_tag);
         GameObject Closest_enemy = null;
-        float Closest_distance = Math.f;
+        float Closest_distance = float.MaxValue;
+        foreach (var item in enemy)
+        {
+            float Distance = Vector3.Distance(item.transform.position, transform.position);
+            if( Distance < Closest_distance){
+                Closest_distance = Distance;
+                Closest_enemy = item;
+            }
+        }
+        return Closest_enemy;
     }
 }
+
