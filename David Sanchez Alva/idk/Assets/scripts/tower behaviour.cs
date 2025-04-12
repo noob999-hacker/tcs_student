@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class towerbehaviour : Generic_Tower
 {
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +26,9 @@ public class towerbehaviour : Generic_Tower
             var b= Instantiate(bullet,transform.position, transform.rotation);
             b.GetComponent < bulletbehavior >().settarget(target);
            }
-            yield return new WaitForSeconds(0.5f);
+
+        yield return new WaitForSeconds(0.5f);
+            //audio.Stop();
         }
     }
 }
