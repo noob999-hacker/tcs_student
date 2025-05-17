@@ -5,6 +5,8 @@ public class playermovement : MonoBehaviour
 {
     [SerializeField] private float move_speed = 5f;
     [SerializeField] private float mouse_rotation = 100f;
+    [SerializeField] private Transform camera;
+    private float Xrotation = 0f;
     private float Yrotation = 0f;
     
     private Rigidbody rb;
@@ -21,9 +23,15 @@ public class playermovement : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X")*Time.deltaTime*mouse_rotation; 
         float mouseY = Input.GetAxis("Mouse Y")*Time.deltaTime*mouse_rotation; 
 
+        Xrotation -= mouseY;
+        Xrotation = Mathf.Clamp(Xrotation, -90f, 90f);
+
+
         Yrotation+=mouseX;
 
         transform.rotation = Quaternion.Euler(0f,Yrotation,0f);
+        camera.localRotation = Quaternion.Euler(Xrotation,0,0);
+
     }
 
     void FixedUpdate()
