@@ -404,6 +404,7 @@
 "Assets/Scenes/scripts/generic enemy.cs"
 "Assets/Scenes/scripts/Pathfinding.cs"
 "Assets/Scenes/scripts/player movement.cs"
+"Assets/Scenes/scripts/ray.cs"
 -langversion:9.0
 /deterministic
 /optimize+
