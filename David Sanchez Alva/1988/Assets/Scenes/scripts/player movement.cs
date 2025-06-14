@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class playermovement : MonoBehaviour
@@ -8,6 +9,7 @@ public class playermovement : MonoBehaviour
     [SerializeField] private Transform camera;
     private float Xrotation = 0f;
     private float Yrotation = 0f;
+    private float jump;
     
     private Rigidbody rb;
     
@@ -23,6 +25,7 @@ public class playermovement : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X")*Time.deltaTime*mouse_rotation; 
         float mouseY = Input.GetAxis("Mouse Y")*Time.deltaTime*mouse_rotation; 
 
+
         Xrotation -= mouseY;
         Xrotation = Mathf.Clamp(Xrotation, -90f, 90f);
 
@@ -36,10 +39,19 @@ public class playermovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float x = Input.GetAxis("Horizontal")*move_speed;
-        float z = Input.GetAxis("Vertical")*move_speed;
-        Vector3 move = (transform.right*x + transform.forward*z);
-        rb.linearVelocity = new Vector3(move.x,rb.linearVelocity.y,move.z);
+        float x = Input.GetAxis("Horizontal") * move_speed;
+        float z = Input.GetAxis("Vertical") * move_speed;
+        Vector3 move = (transform.right * x + transform.forward * z);
+        rb.linearVelocity = new Vector3(move.x, rb.linearVelocity.y, move.z);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+
+         }
+        
 
     }
 }
+
+
