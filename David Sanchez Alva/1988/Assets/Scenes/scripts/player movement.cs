@@ -10,7 +10,9 @@ public class playermovement : MonoBehaviour
     private float Xrotation = 0f;
     private float Yrotation = 0f;
     private float jump;
-    
+
+    private bool isGrounded;
+
     private Rigidbody rb;
     
     void Start()
@@ -44,12 +46,25 @@ public class playermovement : MonoBehaviour
         Vector3 move = (transform.right * x + transform.forward * z);
         rb.linearVelocity = new Vector3(move.x, rb.linearVelocity.y, move.z);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(new Vector3(0, 10, 0), ForceMode.Impulse);
+            isGrounded = false;
+        }
+
+        RaycastHit Hit;
+        if (Physics.Raycast(transform.position, -Vector3.up, out Hit, (-rb.linearVelocity.y)))
+        {
+            Debug.DrawLine(transform.position, Hit.point, Color.black);
+
+            if (Hit.collider.gameObject.tag == "Floor")
+            {
+                isGrounded = true;
+            }
 
          }
-        
+
+
 
     }
 }

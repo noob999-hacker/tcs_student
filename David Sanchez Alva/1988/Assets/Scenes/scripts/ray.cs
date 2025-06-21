@@ -20,10 +20,6 @@ public class ray : MonoBehaviour
     {
         Ray ray = playerCam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         RaycastHit hit;
-        Vector3 start = ray.origin;
-        Vector3 end = ray.origin + ray.direction * maxDistance;
-        lineRenderer.SetPosition(0, start);
-        lineRenderer.SetPosition(1, end);
 
         if (Input.GetMouseButtonDown(0))
         {
