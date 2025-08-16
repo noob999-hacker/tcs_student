@@ -6,6 +6,7 @@ public class GenericEnemy : MonoBehaviour
 {
 
     [SerializeField] private float maxRange;
+    [SerializeField] private GameObject projectile;
 
 
 
@@ -18,22 +19,11 @@ public class GenericEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, maxRange);
-        float closestDistance = Mathf.Infinity;
-        GameObject target = null;
-        foreach (var collider in colliders)
+        GameObject target = findClosest();
+        if (target != null)
         {
-            if (collider.CompareTag("Enemy"))
-            {
-                float distance = Vector3.Distance(transform.position, collider.gameObject.transform.position);
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    target = collider.gameObject;
-                }
-            }
+            shoot(projectile);
         }
-        Debug.Log("closest enemy is" + target.gameObject.name + "" + closestDistance);
     }
 
     private GameObject findClosest()
@@ -59,7 +49,8 @@ public class GenericEnemy : MonoBehaviour
 
     private void shoot(GameObject target)
     {
-        Instantiate(target, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(target, transform.position, transform.rotation);
+        
     }
 }
 
