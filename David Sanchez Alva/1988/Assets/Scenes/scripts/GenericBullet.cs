@@ -8,11 +8,19 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.AddRelativeForce(new Vector3(0, 0, 100), ForceMode.Impulse);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(new Vector3(100, 0, 0), ForceMode.Impulse);
+
+    }
+
+
+    void OnCollision(Collision collision)
+    {
+
+      Destroy(gameObject);
     }
 }

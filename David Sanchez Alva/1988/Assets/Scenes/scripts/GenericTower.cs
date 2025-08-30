@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -7,30 +8,41 @@ public class GenericEnemy : MonoBehaviour
 
     [SerializeField] private float maxRange;
     [SerializeField] private GameObject projectile;
+    [SerializeField] private float shootSpeed = 1f;
+    private GameObject target = null;
 
+    IEnumerator shootCoroutine()
+    {
+        while (true){
+            if (target != null)
+            {
+                shoot(projectile);
+            }
+            yield return new WaitForSeconds(shootSpeed);
+        }
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        StartCoroutine(shootCoroutine());
     }
+
+
 
     // Update is called once per frame
     void Update()
     {
-        GameObject target = findClosest();
-        if (target != null)
-        {
-            shoot(projectile);
-        }
+        findClosest();
+        transform.LookAt(target.transform.position);
     }
 
-    private GameObject findClosest()
+    private void findClosest()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, maxRange);
         float closestDistance = Mathf.Infinity;
-        GameObject target = null;
+        target = null;
         foreach (var collider in colliders)
         {
             if (collider.CompareTag("Enemy"))
@@ -44,7 +56,6 @@ public class GenericEnemy : MonoBehaviour
             }
         }
         Debug.Log("closest enemy is" + target.gameObject.name + "" + closestDistance);
-        return target;
     }
 
     private void shoot(GameObject target)
