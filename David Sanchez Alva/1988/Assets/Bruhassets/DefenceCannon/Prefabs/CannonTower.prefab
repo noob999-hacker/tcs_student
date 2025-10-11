@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5589083972576564121}
   - component: {fileID: 8466596801516134715}
   - component: {fileID: 3739570090117095226}
-  - component: {fileID: 6997383347592418138}
   - component: {fileID: 1816503095441190511}
   m_Layer: 0
   m_Name: CannonTower
@@ -88,28 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6997383347592418138
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5839377106348506521}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7621440347463749334, guid: 6eb179b31bf7fc745a678408cbed075b, type: 3}
 --- !u!114 &1816503095441190511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +100,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxRange: 100
+  projectile: {fileID: 1084254526307154083, guid: f1d83af8d11d2544080fabc3af2a9ad7, type: 3}
+  shootSpeed: 1

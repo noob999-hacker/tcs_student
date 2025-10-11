@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scenes\scripts\Pathfinding.cs" />
     <Compile Include="Assets\Scenes\scripts\player movement.cs" />
     <Compile Include="Assets\Scenes\scripts\GenericBullet.cs" />
+    <Compile Include="Assets\Scenes\scripts\towercode 2.cs" />
     <Compile Include="Assets\Scenes\scripts\ray.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
   </ItemGroup>
