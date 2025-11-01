@@ -69,15 +69,34 @@
     <Compile Include="Assets\Scenes\scripts\GenericTower.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
     <Compile Include="Assets\Scenes\scripts\Pathfinding.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
     <Compile Include="Assets\Scenes\scripts\player movement.cs" />
     <Compile Include="Assets\Scenes\scripts\GenericBullet.cs" />
     <Compile Include="Assets\Scenes\scripts\towercode 2.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
     <Compile Include="Assets\Scenes\scripts\ray.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
+    <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Edge Detection.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Grass Sway.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Blur.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.compute" />
     <None Include="Assets\AurynSky\Dungeon Pack\READ ME.txt" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Depth Mask Edge Detection.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Ocean.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Dissolve.shader" />
     <None Include="Assets\Bruhassets\ReadMe.txt" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plasma.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Outline.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus Line.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Snow.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Lava3D.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Force Field.shader" />
+    <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Simple Sine Wave.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

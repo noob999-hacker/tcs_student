@@ -17,9 +17,12 @@ public class towercode2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        transform.rotation = Quaternion.Slerp(target.transform.position);
         firecooldown -= Time.deltaTime;
         if (firecooldown < 0)
         {
+            FindEnemy();
             Debug.Log("guh");
             firecooldown = 1f / firerate;
         }
@@ -33,10 +36,13 @@ public class towercode2 : MonoBehaviour
         foreach (var hitcollider in hit)
         {
             float distance = Vector3.Distance(transform.position, hitcollider.transform.position);
-            if (nearest < distance)
-            {
-                nearest = distance;
-                target = hitcollider.transform;
+            if (nearest < distance) {
+                if (hitcollider.gameObject.CompareTag("Enemy"))
+                {
+                    nearest = distance;
+                    target = hitcollider.transform;
+                    
+                }
             }
         }
     }

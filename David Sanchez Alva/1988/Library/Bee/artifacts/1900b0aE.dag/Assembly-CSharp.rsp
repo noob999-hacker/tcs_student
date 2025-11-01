@@ -428,6 +428,11 @@
 "Assets/Scenes/scripts/player movement.cs"
 "Assets/Scenes/scripts/ray.cs"
 "Assets/Scenes/scripts/towercode 2.cs"
+"Assets/Ultimate 10 Plus Shaders/Scripts/U10PS_DissolveOverTime.cs"
+"Assets/Ultimate 10 Plus Shaders/Scripts/U10PS_ExampleReview.cs"
+"Assets/Ultimate 10 Plus Shaders/Scripts/U10PS_MouseRotation.cs"
+"Assets/Ultimate 10 Plus Shaders/Scripts/U10PS_SnowOverTime.cs"
+"Assets/Ultimate 10 Plus Shaders/Shaders/Plexus/Plexus.cs"
 -langversion:9.0
 /deterministic
 /optimize+
