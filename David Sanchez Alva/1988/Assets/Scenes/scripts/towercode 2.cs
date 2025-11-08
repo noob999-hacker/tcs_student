@@ -1,3 +1,5 @@
+using System;
+using Mono.Cecil;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,28 +19,38 @@ public class towercode2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        transform.rotation = Quaternion.Slerp(target.transform.position);
-        firecooldown -= Time.deltaTime;
-        if (firecooldown < 0)
+        //Debug.Log(firecooldown);
+        FindEnemy();
+        if (target != null)
         {
-            FindEnemy();
-            Debug.Log("guh");
-            firecooldown = 1f / firerate;
+            Quaternion targetrotation = Quaternion.LookRotation(target.position - transform.position, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetrotation, 1f * Time.deltaTime);
+
+
+            if (firecooldown < 0)
+            {
+                
+                //Debug.Log("guh");
+                firecooldown = 1f / firerate;
+            }
         }
+        firecooldown -= Time.deltaTime;
     }
 
     void FindEnemy()
     {
-        float nearest = maxrangeRaidius * 2;
+        float nearest = maxrangeRaidius * 5;
         target = null;
         Collider[] hit = Physics.OverlapSphere(transform.position, maxrangeRaidius);
         foreach (var hitcollider in hit)
         {
             float distance = Vector3.Distance(transform.position, hitcollider.transform.position);
-            if (nearest < distance) {
-                if (hitcollider.gameObject.CompareTag("Enemy"))
+            //Debug.Log("Distance " + distance);
+            //Debug.Log("Nearest " + nearest);
+            if (distance < nearest) {
+                if (hitcollider.CompareTag("Enemy"))
                 {
+                    Debug.Log(hitcollider.name);
                     nearest = distance;
                     target = hitcollider.transform;
                     

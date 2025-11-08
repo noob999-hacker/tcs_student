@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 562
     height: 646
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -121,8 +121,8 @@ MonoBehaviour:
     y: 0
     width: 326
     height: 646
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -352,7 +352,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Ultimate 10 Plus Shaders/Materials/Unique
+    - Assets/AurynSky/Dungeon Pack/Prefabs/General
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -362,16 +362,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Ultimate 10 Plus Shaders/Materials/Unique
+  - Assets/AurynSky/Dungeon Pack/Prefabs/General
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\tcsce\Downloads\david\tcs_student\David Sanchez Alva\1988
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 06990000
-    m_LastClickedID: 39174
-    m_ExpandedIDs: 00000000f0960000f4960000f6960000f8960000fa960000fc960000fe96000000970000d2980000f898000000ca9a3b
+    scrollPos: {x: 0, y: 207}
+    m_SelectedIDs: 4ac70000
+    m_LastClickedID: 51018
+    m_ExpandedIDs: 00000000989600009a9600009c960000a0960000a49600003a9700005c9700006097000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -400,7 +400,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f0960000f2960000f4960000f6960000f8960000fa960000fc960000fe96000000970000
+    m_ExpandedIDs: 00000000989600009a9600009c9600009e960000a0960000a2960000a4960000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,9 +546,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a0faffff
+      m_SelectedIDs: 228efeff
+      m_LastClickedID: -94686
+      m_ExpandedIDs: 20fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1166,9 +1166,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 557.861, y: -353.1288, z: 473.9899}
+    m_Target: {x: 141.28851, y: 4.5260386, z: 153.93443}
     speed: 2
-    m_Value: {x: 557.861, y: -353.1288, z: 473.9899}
+    m_Value: {x: 141.28851, y: 4.5260386, z: 153.93443}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 0, y: 0}
@@ -1214,20 +1214,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.27349284, y: -0.4049065, z: 0.128385, w: -0.86309516}
+    m_Target: {x: 0.28703764, y: -0.09150664, z: 0.027543746, w: 0.9531755}
     speed: 2
-    m_Value: {x: -0.2721757, y: -0.40506557, z: 0.12776689, w: -0.8634338}
+    m_Value: {x: 0.2856389, y: -0.09011436, z: 0.026977101, w: 0.95370966}
   m_Size:
-    m_Target: 334.23178
+    m_Target: 1.418832
     speed: 2
-    m_Value: 319.83902
+    m_Value: 1.4856879
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.3003498
+    m_SpeedNormalized: 0.6499999
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
