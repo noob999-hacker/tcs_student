@@ -8,6 +8,14 @@
     "C:\\Users\\tcsce\\Downloads\\david\\tcs_student\\David Sanchez Alva\\1988\\Packages\\packages-lock.json"
   ],
   "outputs": {
+    "com.unity.ai.navigation@2.0.9": {
+      "name": "com.unity.ai.navigation",
+      "resolvedPath": "C:\\Users\\tcsce\\Downloads\\david\\tcs_student\\David Sanchez Alva\\1988\\Library\\PackageCache\\com.unity.ai.navigation",
+      "fingerprint": "5218e4bf7edc04fcad4ed3836c1c41aef334b996",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "2.0.9",
+      "source": "registry"
+    },
     "com.unity.collab-proxy@2.8.1": {
       "name": "com.unity.collab-proxy",
       "resolvedPath": "C:\\Users\\tcsce\\Downloads\\david\\tcs_student\\David Sanchez Alva\\1988\\Library\\PackageCache\\com.unity.collab-proxy",
