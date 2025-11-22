@@ -59,24 +59,24 @@
     <UnityVersion>6000.0.30f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\tcsce\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\tcsce\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.2.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\scripts\generic enemy.cs" />
-    <Compile Include="Assets\Scenes\scripts\GenericTower.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\generic enemy.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
-    <Compile Include="Assets\Scenes\scripts\Pathfinding.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
-    <Compile Include="Assets\Scenes\scripts\player movement.cs" />
-    <Compile Include="Assets\Scenes\scripts\GenericBullet.cs" />
-    <Compile Include="Assets\Scenes\scripts\towercode 2.cs" />
-    <Compile Include="Assets\Scenes\scripts\Empty_warrior.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\GenericTower.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\ray.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\GenericBullet.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\towercode 2.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\player movement.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\Pathfinding.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\Empty_warrior.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
-    <Compile Include="Assets\Scenes\scripts\ray.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
@@ -1212,12 +1212,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
