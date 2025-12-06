@@ -65,18 +65,18 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.30f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\generic enemy.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\GenericTower.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\ray.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\GenericBullet.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\towercode 2.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\player movement.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\Pathfinding.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\scripts\Empty_warrior.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\generic enemy.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Empty_warrior.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\ray.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\towercode 2.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\GenericBullet.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\GenericTower.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Pathfinding.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\player movement.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_DissolveOverTime.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
