@@ -5,6 +5,7 @@ public class Empty_warrior : MonoBehaviour
 {
     private NavMeshAgent agent;
     [SerializeField] GameObject target;
+    [SerializeField] private int health;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,5 +16,10 @@ public class Empty_warrior : MonoBehaviour
     void Update()
     {
         agent.SetDestination(target.transform.position);
+    }
+
+    public void Damage(int damage)
+    {
+        health -= damage;
     }
 }

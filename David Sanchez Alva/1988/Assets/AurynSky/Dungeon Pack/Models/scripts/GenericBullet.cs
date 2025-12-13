@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class GenericBullet : MonoBehaviour
 
 {
     private Rigidbody rb;
@@ -18,9 +18,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
 
 
-    void OnCollision(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-
-      Destroy(gameObject);
+      if (collision.gameObject.GetComponent<Empty_warrior>() != null)
+    {
+       Empty_warrior Enemy = collision.gameObject.GetComponent<Empty_warrior>();
+       Enemy.Damage(100);
+       Destroy(gameObject);
+    }
+    
+     
     }
 }
