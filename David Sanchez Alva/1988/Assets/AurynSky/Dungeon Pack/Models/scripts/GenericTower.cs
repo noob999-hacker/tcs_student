@@ -9,6 +9,7 @@ public class GenericEnemy : MonoBehaviour
     [SerializeField] private float maxRange;
     [SerializeField] private GameObject projectile;
     [SerializeField] private float shootSpeed = 1f;
+    [SerializeField] private Transform firepoint;
     private GameObject target = null;
 
     IEnumerator shootCoroutine()
@@ -60,7 +61,7 @@ public class GenericEnemy : MonoBehaviour
 
     private void shoot(GameObject target)
     {
-        GameObject bullet = Instantiate(target, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(target, firepoint.position, transform.rotation);
         
     }
 }

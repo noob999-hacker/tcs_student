@@ -3,12 +3,14 @@ using Mono.Cecil;
 using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class towercode2 : MonoBehaviour
 {
     [SerializeField] private float maxrangeRaidius = 10f;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float firerate = 1f;
+    [SerializeField] private Transform firepoint;
     private Transform target;
     private float firecooldown = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +22,7 @@ public class towercode2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(firecooldown);
+        //Debug.Log(firecooldown);
         FindEnemy();
         if (target != null)
         {
@@ -30,7 +32,7 @@ public class towercode2 : MonoBehaviour
 
             if (firecooldown < 0)
             {
-                Instantiate(bullet, transform.position, transform.rotation);
+                Instantiate(bullet, firepoint.position, transform.rotation);
                 firecooldown = 1f / firerate;
             }
         }

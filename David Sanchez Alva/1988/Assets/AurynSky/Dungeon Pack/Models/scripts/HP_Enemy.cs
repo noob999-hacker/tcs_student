@@ -7,7 +7,7 @@ public class HP_Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Hp_image = GetComponent<Image>();
+
     }
 
     // Update is called once per frame

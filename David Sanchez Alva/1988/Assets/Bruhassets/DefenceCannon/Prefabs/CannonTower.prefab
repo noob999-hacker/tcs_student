@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5589083972576564121}
   - component: {fileID: 8466596801516134715}
   - component: {fileID: 3739570090117095226}
-  - component: {fileID: 1816503095441190511}
+  - component: {fileID: 7208874804371036887}
   m_Layer: 0
   m_Name: CannonTower
   m_TagString: tower
@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7215846556161767634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8466596801516134715
@@ -87,7 +88,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1816503095441190511
+--- !u!114 &7208874804371036887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,6 +100,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb53c977d387cfb42ae0daf47409c7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRange: 100
+  maxRange: 20
   projectile: {fileID: 1084254526307154083, guid: f1d83af8d11d2544080fabc3af2a9ad7, type: 3}
   shootSpeed: 1
+  firepoint: {fileID: 7215846556161767634}
+--- !u!1 &8924805141018786740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7215846556161767634}
+  m_Layer: 0
+  m_Name: firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7215846556161767634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8924805141018786740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.268, z: 0.6771}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5589083972576564121}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
