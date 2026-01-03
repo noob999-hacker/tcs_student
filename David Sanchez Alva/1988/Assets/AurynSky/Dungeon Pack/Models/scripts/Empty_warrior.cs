@@ -38,10 +38,10 @@ public class Empty_warrior : MonoBehaviour
     private void minusHPbar()
     {
         index +=1;
-        if(index <= Hpbars.Count)
+        if(index < Hpbars.Count)
         {
              HP_UI.sprite = Hpbars[index];
-        }
+        }   
        
         
     }

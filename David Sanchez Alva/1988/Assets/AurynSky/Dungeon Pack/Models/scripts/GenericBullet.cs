@@ -25,8 +25,8 @@ public class GenericBullet : MonoBehaviour
        Empty_warrior Enemy = collision.gameObject.GetComponent<Empty_warrior>();
        Enemy.Damage(100);
       Destroy(gameObject);
+
     }
-        
      
     }
 }

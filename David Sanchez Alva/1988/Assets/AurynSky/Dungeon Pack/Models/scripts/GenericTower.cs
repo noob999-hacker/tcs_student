@@ -56,7 +56,7 @@ public class GenericEnemy : MonoBehaviour
                 }
             }
         }
-        Debug.Log("closest enemy is" + target.gameObject.name + "" + closestDistance);
+        //Debug.Log("closest enemy is" + target.gameObject.name + "" + closestDistance);
     }
 
     private void shoot(GameObject target)
