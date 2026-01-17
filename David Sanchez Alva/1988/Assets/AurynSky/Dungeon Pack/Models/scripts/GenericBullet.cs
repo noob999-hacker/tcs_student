@@ -4,11 +4,11 @@ public class GenericBullet : MonoBehaviour
 
 {
     private Rigidbody rb;
+    public int shootvelocity;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddRelativeForce(new Vector3(0, 100, 0), ForceMode.Impulse);
     }
 
     // Update is called once per frame
@@ -29,4 +29,9 @@ public class GenericBullet : MonoBehaviour
     }
      
     }
+    public void Shoot(Vector3 shootdirection)
+  {
+          rb.AddRelativeForce(shootdirection * shootvelocity, ForceMode.Impulse);
+          transform.LookAt(shootdirection);
+  }
 }

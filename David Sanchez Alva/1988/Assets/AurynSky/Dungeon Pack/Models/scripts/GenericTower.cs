@@ -36,7 +36,11 @@ public class GenericEnemy : MonoBehaviour
     void Update()
     {
         findClosest();
-        transform.LookAt(target.transform.position);
+         if (target != null)
+        {
+            transform.LookAt(target.transform.position);
+        }
+        
     }
 
     private void findClosest()
@@ -59,10 +63,11 @@ public class GenericEnemy : MonoBehaviour
         //Debug.Log("closest enemy is" + target.gameObject.name + "" + closestDistance);
     }
 
-    private void shoot(GameObject target)
+    private void shoot(GameObject projectile)
     {
-        GameObject bullet = Instantiate(target, firepoint.position, transform.rotation);
-        
+        GameObject bullet = Instantiate(projectile, firepoint.position, Quaternion.identity);
+        Vector3 shootdirection = target.transform.position - transform.position;
+        bullet.GetComponent<GenericBullet>().Shoot(shootdirection);
     }
 }
 
