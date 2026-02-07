@@ -1,9 +1,12 @@
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
+    public static playermovement Instance;
+
     [SerializeField] private float move_speed = 5f;
     [SerializeField] private float mouse_rotation = 100f;
     [SerializeField] private Transform camera;
@@ -17,6 +20,7 @@ public class playermovement : MonoBehaviour
     
     void Start()
     {
+        Instance = this;
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }

@@ -14,6 +14,7 @@ public class Empty_warrior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        target = playermovement.Instance.gameObject;
         agent = GetComponent<NavMeshAgent>();
         index = 0;
     }
