@@ -247,7 +247,7 @@ MonoBehaviour:
   - {fileID: -18225604, guid: 5ebe1776096b5164193334af6b44c577, type: 3}
   - {fileID: -1675302891, guid: 5ebe1776096b5164193334af6b44c577, type: 3}
   - {fileID: -1675302891, guid: 5ebe1776096b5164193334af6b44c577, type: 3}
-  HP_UI: {fileID: 0}
+  HP_UI: {fileID: 2871235236468194535}
 --- !u!1 &5249120809615733595
 GameObject:
   m_ObjectHideFlags: 0

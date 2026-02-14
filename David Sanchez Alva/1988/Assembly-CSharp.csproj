@@ -80,6 +80,7 @@
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plasma.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Outline.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus Line.shader" />
+    <None Include="Assets\Mushroom house\StandardDoubleSided.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Snow.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Lava3D.shader" />
     <None Include="Assets\Ultimate 10 Plus Shaders\Shaders\Force Field.shader" />

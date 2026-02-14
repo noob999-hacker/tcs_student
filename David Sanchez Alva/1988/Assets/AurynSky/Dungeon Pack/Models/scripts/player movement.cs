@@ -17,10 +17,14 @@ public class playermovement : MonoBehaviour
     private bool isGrounded;
 
     private Rigidbody rb;
-    
-    void Start()
+
+    void Awake()
     {
         Instance = this;
+    }
+    void Start()
+    {
+        
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
