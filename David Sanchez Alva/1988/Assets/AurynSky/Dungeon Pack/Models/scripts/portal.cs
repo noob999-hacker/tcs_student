@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class portal : MonoBehaviour
@@ -5,7 +6,7 @@ public class portal : MonoBehaviour
 {
     private float timer;
     private float spawnTimer = 15;
-    [SerializeField] GameObject enemy;
+    [SerializeField] List<GameObject> enemy_list;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,7 +29,8 @@ public class portal : MonoBehaviour
 
     void Spawn()
     {
-         GameObject bullet = Instantiate(enemy, transform.position, Quaternion.identity);
+        int spawn_index = UnityEngine.Random.Range(0,enemy_list.Count);
+         GameObject bullet = Instantiate(enemy_list[spawn_index], transform.position, Quaternion.identity);
     }
 
 }
