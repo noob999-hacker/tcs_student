@@ -61,6 +61,7 @@
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Empty_warrior.cs" />
     <Compile Include="Assets\Reversed Interactive\The Portal Collection\Scripts\SimpleCameraControllerPortals.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\GenericTower.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\ATK_Script.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\portal.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Pathfinding.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_SnowOverTime.cs" />

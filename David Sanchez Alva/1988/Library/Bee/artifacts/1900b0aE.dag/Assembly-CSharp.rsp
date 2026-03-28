@@ -428,6 +428,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.55f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.55f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.55f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/AurynSky/Dungeon Pack/Models/scripts/ATK_Script.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/Empty_warrior.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/generic enemy.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/GenericBullet.cs"
