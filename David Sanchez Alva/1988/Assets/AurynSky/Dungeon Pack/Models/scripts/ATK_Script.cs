@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ATK_Script : MonoBehaviour
@@ -6,6 +7,7 @@ public class ATK_Script : MonoBehaviour
     public Transform player;
     [SerializeField] private float ATK_Range;
     [SerializeField] private Animator animator;
+    public GameObject trigger;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,5 +21,13 @@ public class ATK_Script : MonoBehaviour
         {
             animator.SetTrigger("ATK_trigger");
         }
+    }
+    public void Activation()
+    {
+        trigger.SetActive(true);
+    }
+    public void Deactivation()
+    {
+        trigger.SetActive(false);
     }
 }

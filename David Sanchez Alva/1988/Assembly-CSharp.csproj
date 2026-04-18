@@ -49,14 +49,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\SpikeTrapDemo.cs" />
-    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\HP_Enemy.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\generic enemy.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\ray.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\towercode 2.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\GenericBullet.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Placeholder.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_ExampleReview.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Shaders\Plexus\Plexus.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Scripts\TrapDoorDemo.cs" />
+    <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Player_HP.cs" />
     <Compile Include="Assets\Ultimate 10 Plus Shaders\Scripts\U10PS_MouseRotation.cs" />
     <Compile Include="Assets\AurynSky\Dungeon Pack\Models\scripts\Empty_warrior.cs" />
     <Compile Include="Assets\Reversed Interactive\The Portal Collection\Scripts\SimpleCameraControllerPortals.cs" />
