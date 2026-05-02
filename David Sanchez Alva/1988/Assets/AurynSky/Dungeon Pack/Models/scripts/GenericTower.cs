@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,6 +12,8 @@ public class GenericEnemy : MonoBehaviour
     [SerializeField] private float shootSpeed = 1f;
     [SerializeField] private Transform firepoint;
     private GameObject target = null;
+    [SerializeField] bool is_enemy;
+    private string target_tag;
 
     IEnumerator shootCoroutine()
     {
@@ -27,6 +30,17 @@ public class GenericEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (is_enemy)
+        {
+            target_tag = "Player";
+
+        }
+        else
+        {
+            target_tag = "Enemy";
+        }
+            
+        
         StartCoroutine(shootCoroutine());
     }
 
@@ -50,7 +64,7 @@ public class GenericEnemy : MonoBehaviour
         target = null;
         foreach (var collider in colliders)
         {
-            if (collider.CompareTag("Enemy"))
+            if (collider.CompareTag(target_tag))
             {
                 float distance = Vector3.Distance(transform.position, collider.gameObject.transform.position);
                 if (distance < closestDistance)
@@ -68,6 +82,7 @@ public class GenericEnemy : MonoBehaviour
         GameObject bullet = Instantiate(projectile, firepoint.position, Quaternion.identity);
         Vector3 shootdirection = target.transform.position - transform.position;
         bullet.GetComponent<GenericBullet>().Shoot(shootdirection);
+        Debug.Log ("enemy shot");
     }
 }
 
