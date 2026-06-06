@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEditor;
+using Unity.VisualScripting;
 public class Player_HP : MonoBehaviour
 
 {
@@ -36,8 +37,8 @@ public class Player_HP : MonoBehaviour
     private void changeHPbar()
     {
         float hp_percent = (float)playing_hp / max_hp;
-        int index = barhp.Count - Mathf.RoundToInt(playing_hp * barhp.Count);
-        
+        int index = barhp.Count - Mathf.RoundToInt(hp_percent * barhp.Count);
+        index = Mathf.Clamp(index, 0, barhp.Count -1);
         Debug.Log (index);
         heals.sprite = barhp[index];
     }
