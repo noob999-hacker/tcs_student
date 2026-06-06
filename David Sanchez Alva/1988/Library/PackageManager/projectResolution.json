@@ -68,6 +68,16 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.render-pipelines.universal@17.0.4": {
+      "name": "com.unity.render-pipelines.universal",
+      "displayName": "Universal Render Pipeline",
+      "resolvedPath": "C:\\Users\\tcsce\\Downloads\\david\\tcs_student\\David Sanchez Alva\\1988\\Library\\PackageCache\\com.unity.render-pipelines.universal@dd24be0d7cf1",
+      "fingerprint": "dd24be0d7cf165e3b4d0d5849c5ae051b9b7a957",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.4",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.shadergraph@17.0.4": {
       "name": "com.unity.shadergraph",
       "displayName": "Shader Graph",
@@ -418,6 +428,16 @@
       "editorCompatibility": "2019.1.0a1",
       "version": "4.9.3",
       "source": "registry",
+      "testable": false
+    },
+    "com.unity.render-pipelines.universal-config@17.0.3": {
+      "name": "com.unity.render-pipelines.universal-config",
+      "displayName": "Universal Render Pipeline Config",
+      "resolvedPath": "C:\\Users\\tcsce\\Downloads\\david\\tcs_student\\David Sanchez Alva\\1988\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@dd206bf35d04",
+      "fingerprint": "dd206bf35d0451204981fdb31d4c6831a0ee2a7e",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin",
       "testable": false
     },
     "com.unity.ide.visualstudio@2.0.23": {
