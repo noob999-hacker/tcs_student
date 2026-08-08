@@ -11,7 +11,7 @@ public class Player_HP : MonoBehaviour
     [SerializeField] private int max_hp;
     [SerializeField] private List<Sprite> barhp;
     [SerializeField] private Image heals;
-
+    [SerializeField] private GameObject panel;
         void Start()
     {
         playing_hp = max_hp;
@@ -28,9 +28,9 @@ public class Player_HP : MonoBehaviour
         Debug.Log($"player hp = {playing_hp}");
         changeHPbar();
       if (playing_hp <= 0)
-      Debug.Log ("Player died");
+      //Debug.Log ("Player died");
         {
-            //Destroy(gameObject);
+            panel.SetActive(true);
         } 
     }
     
