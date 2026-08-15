@@ -31,6 +31,7 @@ public class Player_HP : MonoBehaviour
       //Debug.Log ("Player died");
         {
             panel.SetActive(true);
+            playermovement.Instance.DeathUnlock();
         } 
     }
     

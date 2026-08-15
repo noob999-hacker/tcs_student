@@ -13,6 +13,7 @@ public class playermovement : MonoBehaviour
     private float Xrotation = 0f;
     private float Yrotation = 0f;
     private float jump;
+    private bool is_dead;
 
     private bool isGrounded;
 
@@ -24,7 +25,7 @@ public class playermovement : MonoBehaviour
     }
     void Start()
     {
-        
+        is_dead = false;
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -32,6 +33,10 @@ public class playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (is_dead)
+        {
+            return; 
+        }
         float mouseX = Input.GetAxis("Mouse X")*Time.deltaTime*mouse_rotation; 
         float mouseY = Input.GetAxis("Mouse Y")*Time.deltaTime*mouse_rotation; 
 
@@ -49,6 +54,10 @@ public class playermovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (is_dead)
+        {
+            return; 
+        }
         float x = Input.GetAxis("Horizontal") * move_speed;
         float z = Input.GetAxis("Vertical") * move_speed;
         Vector3 move = (transform.right * x + transform.forward * z);
@@ -74,6 +83,12 @@ public class playermovement : MonoBehaviour
 
 
 
+    }
+
+    public void DeathUnlock()
+    {
+        is_dead = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }
 
