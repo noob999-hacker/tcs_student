@@ -19,15 +19,22 @@ public class playermovement : MonoBehaviour
 
     private Rigidbody rb;
 
+    [SerializeField] private GameObject menu;
+
     void Awake()
     {
         Instance = this;
     }
     void Start()
     {
-        is_dead = false;
         rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.Locked;
+        is_dead = false;
+         menu.SetActive(true);
+    }
+
+    void Unlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
     }
 
     // Update is called once per frame
