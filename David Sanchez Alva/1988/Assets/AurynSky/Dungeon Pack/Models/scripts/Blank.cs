@@ -17,6 +17,8 @@ public class Blank : MonoBehaviour
 
     public void Play()
     {
+        playermovement.start_menu = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

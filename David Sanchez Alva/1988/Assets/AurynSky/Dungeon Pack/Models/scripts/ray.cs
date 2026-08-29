@@ -32,7 +32,7 @@ public class ray : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("tryimg to add a tower on a tower: Adding tower cancelled");
+                    Debug.Log("trying to add a tower on a tower: Adding tower cancelled");
                  }
 
              }

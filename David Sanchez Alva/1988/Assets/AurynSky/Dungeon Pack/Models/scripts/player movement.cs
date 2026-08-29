@@ -6,6 +6,7 @@ using UnityEngine;
 public class playermovement : MonoBehaviour
 {
     public static playermovement Instance;
+    public static bool start_menu = true;
 
     [SerializeField] private float move_speed = 5f;
     [SerializeField] private float mouse_rotation = 100f;
@@ -29,7 +30,8 @@ public class playermovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         is_dead = false;
-         menu.SetActive(true);
+        menu.SetActive(start_menu);
+        Debug.Log(start_menu);
     }
 
     void Unlock()
