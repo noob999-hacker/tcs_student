@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
+
     void Start()
     {
         
@@ -18,4 +20,12 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void MainMenu()
+    {
+        playermovement.start_menu = true;
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    
 }
+
