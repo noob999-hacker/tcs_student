@@ -18,7 +18,7 @@ public class Placeholder : MonoBehaviour
         timer += Time.deltaTime;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         Player_HP PlayerHealth = other.gameObject.GetComponentInParent<Player_HP>();
         if(PlayerHealth != null)

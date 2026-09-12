@@ -2492,6 +2492,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3189240986211681508, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1287692
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189240986211681508, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
+      propertyPath: m_Center.z
+      value: 0.93878937
+      objectReference: {fileID: 0}
     - target: {fileID: 4019380994917244410, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
       propertyPath: m_LocalPosition.x
       value: 130.59
@@ -2560,10 +2568,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1715589162}
+    - target: {fileID: 6221589612494219673, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.493
+      objectReference: {fileID: 0}
     - target: {fileID: 7361634611968941191, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1628810697}
+    - target: {fileID: 8991473148933912977, guid: 5d30ed4fefac5e54492ae5657ad8cd75, type: 3}
+      propertyPath: dmg_cd
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2992,7 +3008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &821067742
 Transform:
   m_ObjectHideFlags: 0
@@ -4011,7 +4027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2207164578646099634, guid: 58a66f38a0ab4c743b35c2f9b86323bf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2207164578646099634, guid: 58a66f38a0ab4c743b35c2f9b86323bf, type: 3}
       propertyPath: m_TagString
@@ -6117,7 +6133,7 @@ Transform:
   m_GameObject: {fileID: 1715589162}
   serializedVersion: 2
   m_LocalRotation: {x: -0.002676792, y: -0, z: -0, w: 0.9999964}
-  m_LocalPosition: {x: 172.25, y: 236.9, z: 240.9}
+  m_LocalPosition: {x: 167.91, y: 235.48, z: 243.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7649,7 +7665,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
