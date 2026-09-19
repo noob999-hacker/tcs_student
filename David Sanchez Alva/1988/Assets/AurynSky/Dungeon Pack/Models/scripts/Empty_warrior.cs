@@ -34,6 +34,7 @@ public class Empty_warrior : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        //print("damage");
     }
 
     private void minusHPbar()

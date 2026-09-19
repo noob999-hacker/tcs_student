@@ -8,6 +8,8 @@ public class ATK_Script : MonoBehaviour
     [SerializeField] private float ATK_Range;
     [SerializeField] private Animator animator;
     public GameObject trigger;
+
+    public bool atk_anim_done;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

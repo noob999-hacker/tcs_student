@@ -1751,6 +1751,7 @@ MonoBehaviour:
   ATK_Range: 0
   animator: {fileID: 477171110}
   trigger: {fileID: 0}
+  atk_anim_done: 0
 --- !u!95 &477171110
 Animator:
   serializedVersion: 7
@@ -3008,7 +3009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &821067742
 Transform:
   m_ObjectHideFlags: 0
@@ -4049,6 +4050,10 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 1628810697}
+    - target: {fileID: 5587844009182534441, guid: 58a66f38a0ab4c743b35c2f9b86323bf, type: 3}
+      propertyPath: ATK_Range
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5923,7 +5928,8 @@ MonoBehaviour:
   player: {fileID: 0}
   ATK_Range: 3
   animator: {fileID: 1646091625}
-  trigger: {fileID: 2071437525}
+  trigger: {fileID: 1628810697}
+  atk_anim_done: 0
 --- !u!136 &1646091622
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7620,7 +7626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2071437526
 Transform:
   m_ObjectHideFlags: 0
