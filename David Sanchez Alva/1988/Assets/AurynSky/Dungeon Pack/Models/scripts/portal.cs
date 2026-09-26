@@ -7,6 +7,7 @@ public class portal : MonoBehaviour
     private float timer;
     private float spawnTimer = 15;
     [SerializeField] List<GameObject> enemy_list;
+    public int active_threshold;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +18,10 @@ public class portal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(active_threshold > Empty_warrior.enemy_count)
+        {
+            return;
+        }
         timer += Time.deltaTime;
         
             if (timer >= spawnTimer)

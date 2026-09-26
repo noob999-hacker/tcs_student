@@ -10,6 +10,7 @@ public class Empty_warrior : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private List<Sprite> Hpbars;
     [SerializeField] private Image HP_UI;
+    public static int enemy_count = 0;
     private int index;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +33,7 @@ public class Empty_warrior : MonoBehaviour
         minusHPbar();
         if(health <= 0)
         {
+            enemy_count += 1;
             Destroy(gameObject);
         }
         //print("damage");

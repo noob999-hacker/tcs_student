@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -69,8 +70,12 @@ public class GenericEnemy : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, collider.gameObject.transform.position);
                 if (distance < closestDistance)
                 {
-                    closestDistance = distance;
-                    target = collider.gameObject;
+                    if(Vector3.Angle(transform.forward, transform.position - collider.transform.position) < 45)
+                    {
+                         closestDistance = distance;
+                        target = collider.gameObject;
+                    }
+                   
                 }
             }
         }

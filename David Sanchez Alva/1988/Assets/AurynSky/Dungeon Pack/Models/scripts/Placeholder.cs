@@ -1,4 +1,4 @@
-susing UnityEngine;
+using UnityEngine;
 
 public class Placeholder : MonoBehaviour
 
