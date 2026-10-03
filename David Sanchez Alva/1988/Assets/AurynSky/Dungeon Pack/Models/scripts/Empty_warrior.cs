@@ -34,6 +34,7 @@ public class Empty_warrior : MonoBehaviour
         if(health <= 0)
         {
             enemy_count += 1;
+            GameObject.FindFirstObjectByType<Game_Manager>().enemy_kill += 1;
             Destroy(gameObject);
         }
         //print("damage");

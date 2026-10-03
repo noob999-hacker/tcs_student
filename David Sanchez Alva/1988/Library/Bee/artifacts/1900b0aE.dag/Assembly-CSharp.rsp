@@ -439,6 +439,7 @@
 "Assets/AurynSky/Dungeon Pack/Models/scripts/Blank.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/Empty_warrior.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/GameOver.cs"
+"Assets/AurynSky/Dungeon Pack/Models/scripts/Game_Manager.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/generic enemy.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/GenericBullet.cs"
 "Assets/AurynSky/Dungeon Pack/Models/scripts/GenericTower.cs"

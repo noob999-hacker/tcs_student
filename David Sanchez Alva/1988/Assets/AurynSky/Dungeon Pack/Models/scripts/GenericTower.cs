@@ -70,7 +70,7 @@ public class GenericEnemy : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, collider.gameObject.transform.position);
                 if (distance < closestDistance)
                 {
-                    if(Vector3.Angle(transform.forward, transform.position - collider.transform.position) < 45)
+                    if(Vector3.Angle(transform.forward, transform.position - collider.transform.position) < 180)
                     {
                          closestDistance = distance;
                         target = collider.gameObject;
