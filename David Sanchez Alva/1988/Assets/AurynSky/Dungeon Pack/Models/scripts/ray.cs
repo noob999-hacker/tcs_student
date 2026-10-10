@@ -40,7 +40,22 @@ public class ray : MonoBehaviour
 
 
          }
+        if (Input.GetMouseButtonDown(1))
+        {
+             if (Physics.Raycast(ray, out hit, maxDistance))
+            {
+                Quaternion rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+                if (!(hit.collider.gameObject.tag == "tower"))
+                {
+                    Instantiate(tower[1], hit.point, rotation);
+                }
+                else
+                {
+                    Debug.Log("trying to add a tower on a tower: Adding tower cancelled");
+                 }
 
+             }
+        }
 
 
 
