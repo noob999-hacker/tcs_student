@@ -159,6 +159,10 @@ PrefabInstance:
       value: Tower_2
       objectReference: {fileID: 0}
     - target: {fileID: 7208874804371036887, guid: 1777e97210c83d742a8e67f3c2c8fe13, type: 3}
+      propertyPath: cash
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7208874804371036887, guid: 1777e97210c83d742a8e67f3c2c8fe13, type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 2900235101054776500, guid: eddd8356b3ddc954db373134b0c32190, type: 3}
@@ -168,7 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7215846556161767634, guid: 1777e97210c83d742a8e67f3c2c8fe13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.374
+      value: 0.564
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215846556161767634, guid: 1777e97210c83d742a8e67f3c2c8fe13, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.092
       objectReference: {fileID: 0}
     - target: {fileID: 8466596801516134715, guid: 1777e97210c83d742a8e67f3c2c8fe13, type: 3}
       propertyPath: m_Mesh

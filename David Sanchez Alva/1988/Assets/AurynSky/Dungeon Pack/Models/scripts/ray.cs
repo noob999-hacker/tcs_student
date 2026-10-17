@@ -1,3 +1,5 @@
+using System.Data.SqlTypes;
+using UnityEditor.Rendering.Canvas.ShaderGraph;
 using UnityEngine;
 
 public class ray : MonoBehaviour
@@ -9,6 +11,7 @@ public class ray : MonoBehaviour
     [SerializeField] private GameObject[] tower;
 
     public LineRenderer lineRenderer;
+    public Game_Manager game_Manager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,12 +45,15 @@ public class ray : MonoBehaviour
          }
         if (Input.GetMouseButtonDown(1))
         {
-             if (Physics.Raycast(ray, out hit, maxDistance))
+            if (tower[1].GetComponent<GenericEnemy>().cash <= game_Manager.money)
+            {
+                 if (Physics.Raycast(ray, out hit, maxDistance))
             {
                 Quaternion rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
                 if (!(hit.collider.gameObject.tag == "tower"))
                 {
                     Instantiate(tower[1], hit.point, rotation);
+                    game_Manager.money -= tower[1].GetComponent<GenericEnemy>().cash;
                 }
                 else
                 {
@@ -55,6 +61,8 @@ public class ray : MonoBehaviour
                  }
 
              }
+            }
+            
         }
 
 

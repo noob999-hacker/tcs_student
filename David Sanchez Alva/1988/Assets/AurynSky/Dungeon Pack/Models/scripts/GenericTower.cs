@@ -15,6 +15,7 @@ public class GenericEnemy : MonoBehaviour
     private GameObject target = null;
     [SerializeField] bool is_enemy;
     private string target_tag;
+    public int cash;
 
     IEnumerator shootCoroutine()
     {
